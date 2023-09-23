@@ -613,7 +613,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
- h3 {
+h3 {
   font-weight: 700;
   font-size: 26px;
   color: var(--primary);
@@ -638,15 +638,16 @@ section {
   font-size: 16px;
   margin-right: 5px;
   color: var(--secondary);
-  
+
   line-height: 0;
 }
-.img-con{
-height: 380px !important;
-display: flex;
-justify-content: center;
-background-color: rgba(5, 99, 187,0.3);
-width: 330px;
+
+.img-con {
+  height: 380px !important;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(5, 99, 187, 0.3);
+  width: 330px;
 }
 
 .about .content p:last-child {
@@ -662,12 +663,12 @@ width: 330px;
   width: 100%;
   position: relative;
   text-align: center;
-  background: rgba(5, 99, 187,0.6);
+  background: rgba(5, 99, 187, 0.6);
   color: var(--secondary);
   font-size: large;
 }
 
-.facts .count-box > i {
+.facts .count-box>i {
   position: absolute;
   top: -25px;
   left: 50%;
@@ -697,13 +698,15 @@ width: 330px;
   font-size: 1rem;
   text-align: center;
 }
-.facts .count-box ul{
+
+.facts .count-box ul {
   padding: 0.1em 1em;
   list-style: none;
   padding: 0;
   font-size: 1rem;
   text-align: left;
 }
+
 .facts .count-box ul i {
   color: var(--secondary);
   line-height: 0;
@@ -718,8 +721,9 @@ width: 330px;
   background: none;
   border-radius: 0;
 }
-.skills .skill-item{
-  padding:0 0 16px 16px;
+
+.skills .skill-item {
+  padding: 0 0 16px 16px;
   margin-top: -2px;
   /* padding: 0 10px ; */
   position: relative;
@@ -763,7 +767,7 @@ width: 330px;
 }
 
 .resume .resume-item {
-  padding:0 0 16px 16px;
+  padding: 0 0 16px 16px;
   margin-top: -2px;
   border-left: 2px solid #0563bb;
   /* padding: 0 10px ; */
@@ -841,12 +845,16 @@ width: 330px;
   text-transform: uppercase;
   color: #272829;
   margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  transition: all 0.2s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #0563bb;
+  border-bottom-width: 2px;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -936,15 +944,17 @@ width: 330px;
   text-align: center;
   z-index: 4;
   width: 50%;
+
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #45505b;
   margin: 0 2px;
-  font-size: 28px;
+  font-size: 1.25rem;
   display: inline-block;
   transition: 0.3s;
 }
+
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   color: #148af9;
