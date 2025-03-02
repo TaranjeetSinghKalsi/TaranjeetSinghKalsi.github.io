@@ -11,13 +11,6 @@
   const musicButton = document.querySelector(".music");
   const icon = musicButton.querySelector("i");
   let isAudioPlaying = false; // Store the state of audio playback
-  let ageSpan=document.getElementById("age");
-  try {
-    ageSpan.innerText=Math.floor(((new Date())-(new Date('11/14/2000')))/(1000*60*60*24*365.25));
-  } catch (error) {
-    console.log(error);
-    
-  }
 
   // Function to toggle audio play/pause
   function toggleAudio() {
