@@ -10,8 +10,9 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #272829;
+  font-weight: 500;
   /* padding: 50px; */
 }
 
@@ -23,7 +24,7 @@ body:before {
   z-index: -99;
   /* transform: rotate(30deg); */
   background-image: url('../img/india-space.jpg');
-  background-color: rgb(0, 0, 0, 0.4);
+  background-color: rgb(0, 0, 0, 0.2);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: top;
@@ -37,12 +38,14 @@ body:before {
   to {
     background-position: bottom;
     transform: scale(1.1) rotateX(10deg);
+    background-color: rgb(0, 0, 0, 0.6);
   }
 }
 
 @media (max-width: 991px) {
   body:before {
     background-position: 30% center;
+    height: 120%;
   }
 
   @keyframes rotate {
@@ -106,7 +109,7 @@ video {
 .glass-effect {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  background-color: rgba(5, 99, 187, 0.6);
+  background-color: rgba(5, 99, 187, 0.8);
   box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -676,10 +679,19 @@ section {
   left: calc(50% - 20px);
 }
 
-.section-title p {
+.section-title > p {
   margin-bottom: 0;
+  font-weight: 700;
+  font-size: 1.25em;
+  width: 80%;
+  margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .section-title > p{
+    width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -716,7 +728,7 @@ h3 {
   height: 380px !important;
   display: flex;
   justify-content: center;
-  background-color: rgba(5, 99, 187, 0.3);
+  background-color: rgba(5, 99, 187, 0.4);
   width: 330px;
 }
 
@@ -739,7 +751,7 @@ h3 {
   width: 100%;
   position: relative;
   text-align: center;
-  background: rgba(5, 99, 187, 0.6);
+  background: rgba(5, 99, 187, 0.8);
   color: var(--secondary);
   font-size: large;
   height: 95%;
